@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* body */
+body {
+  background-color: #101a20;
+  overflow-x: hidden;
+}
+
+.my-title {
+  color: #198754;
+
+  text-shadow: 0 0px 20px rgba(25, 135, 84, 0.5);
+}
+
+/* nav */
+.my-nav {
+  width: 100%;
+  z-index: 1000;
+}
+/* navbar link */
+.my-link {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s linear;
+  color: white;
+}
+.my-link:hover {
+  transform: scale(1.1);
+  color: #198754;
+}
+.my-link:focus {
+  color: #198754;
+  font-weight: bold;
+}
+.my-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: 0%;
+  height: 2px;
+  background-color: #13c185;
+  transition: 0.4s;
+}
+.my-link:hover::after {
+  width: 50%;
+}
+
+/* section one */
+
+span {
+  color: #13c185;
+}
+.title h1 {
+  font-size: 3em;
+}
+/* my-icone */
+.my-icone {
+  background-color: #141f26;
+  transition: all 0.4s linear;
+}
+.my-icone:hover {
+  background-color: #13c185;
+  transform: scale(1.1);
+
+  box-shadow: 0 10px 20px #13c18451;
+}
+/* my-photo */
+.my-photo {
+  box-shadow: 5px 5px 100px #13c18451;
+  transition: 0.3s all linear;
+}
+.my-photo:hover {
+  cursor: pointer;
+}
+/* my-info */
+
+/* my-icone-foter */
+.my-icone-foter {
+  border: 1px solid #6c757d;
+  color: #6c757d;
+}
+.my-icone-foter:hover {
+  color: #198754;
+  border: 1px solid #198754;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 30px #13c18451;
+}
