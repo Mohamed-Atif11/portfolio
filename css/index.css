@@ -27,6 +27,7 @@ body {
   position: fixed;
   bottom: 20px;
   left: 95%;
+  z-index: 1000;
   transform: translateX(-50%);
   font-size: 30px;
   background-color: var(--border-color);
