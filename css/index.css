@@ -3,7 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
 /* root  */
 :root {
   --special-text: #dce7ed;
@@ -24,6 +23,20 @@ body {
 body {
   background: var(--main-background);
 }
+.icon-up {
+  position: fixed;
+  bottom: 20px;
+  left: 95%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  background-color: var(--border-color);
+  color: var(--special-text);
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 1em;
+  border: 1px solid var(--border-color);
+}
+
 .my-title {
   color: var(--text-color);
   text-shadow: 0 0 20px rgba(135, 25, 52, 0.5);
