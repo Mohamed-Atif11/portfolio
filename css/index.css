@@ -28,10 +28,9 @@ body {
   bottom: 20px;
   left: 90%;
   z-index: 1000;
-  transform: translateX(-50%);
   font-size: 30px;
-  background-color: var(--border-color);
-  color: var(--special-text);
+  background-color: var(--text-color);
+  color: var(--card-background);
   width: 1.5em;
   height: 1.5em;
   border-radius: 1em;
@@ -170,6 +169,7 @@ span {
 }
 .progress-bar {
   background-color: var(--text-color);
+  color: var(--main-background);
 }
 .skills-card {
   border-radius: 10px;
@@ -191,4 +191,64 @@ span {
 }
 .icon {
   color: var(--text-color);
+}
+/* resume page*/
+.my-btn-cv {
+  border: 1px solid var(--border-color) !important;
+  outline: #13c185 !important;
+}
+.icone-resume,
+.supTitle {
+  color: var(--text-color);
+}
+.section-one-info {
+  background-color: var(--card-background);
+  border-left: 2px solid #13c185;
+  transition: 0.5s ease;
+}
+.section-one-info:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 5px #13c185;
+  border: none;
+  cursor: pointer;
+}
+.card-broject {
+  background: var(--card-background);
+  border: none;
+}
+.icone-project {
+  background: var(--background);
+  border: 1px solid var(--border-color);
+  width: 8em;
+  transition: 0.4s linear;
+}
+.icone-project:hover {
+  background: var(--main-background);
+  transform: scale(1.1);
+}
+.project-card {
+  border: 1px solid rgba(13, 189, 151, 0.108);
+  transition: 0.4s linear;
+}
+.project-card:hover {
+  border-radius: 0.5em;
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 10px var(--border-color);
+}
+.my-btn-end-section1,
+.my-btn-end-section2 {
+  width: 12em;
+  height: 2.5em;
+  border: 1px solid var(--border-color);
+  background-color: var(--background);
+  border-radius: 2em;
+  color: white;
+  transition: 0.2s linear;
+}
+.my-btn-end-section1 {
+  background: var(--text-color);
+  color: var(--main-background);
+}
+.icone-resume-castom {
+  color: var(--card-background);
 }

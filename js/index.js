@@ -21,7 +21,6 @@ function typeEffect() {
   } else {
     text.textContent = currentWord.substring(0, charIndex - 1);
     charIndex--;
-
     if (charIndex === 0) {
       isDeleting = false;
       wordIndex++;
