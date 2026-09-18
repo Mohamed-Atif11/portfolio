@@ -237,8 +237,6 @@ span {
 }
 .my-btn-end-section1,
 .my-btn-end-section2 {
-  width: 12em;
-  height: 2.5em;
   border: 1px solid var(--border-color);
   background-color: var(--background);
   border-radius: 2em;
