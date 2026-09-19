@@ -22,6 +22,13 @@ body {
 }
 body {
   background: var(--main-background);
+  padding-top: 70px;
+}
+.myNav {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 .icon-up {
   position: fixed;
@@ -208,13 +215,20 @@ span {
 }
 .section-one-info:hover {
   transform: translateY(-10px);
-  box-shadow: 8px 8px 5px #13c185;
+  box-shadow: 2px 2px 5px #13c185;
   border: none;
   cursor: pointer;
 }
 .card-broject {
   background: var(--card-background);
   border: none;
+  background: linear-gradient(
+    -135deg,
+    #0d3b3f 0%,
+    #102f38 40%,
+    #0b202b 75%,
+    #091b25 100%
+  );
 }
 .icone-project {
   background: var(--background);
@@ -223,11 +237,15 @@ span {
   transition: 0.4s linear;
 }
 .icone-project:hover {
-  background: var(--main-background);
-  transform: scale(1.1);
+  background: linear-gradient(
+    135deg,
+    #0d3b3f 0%,
+    #102f38 40%,
+    #0b202b 75%,
+    #091b25 100%
+  );
 }
 .project-card {
-  border: 1px solid rgba(13, 189, 151, 0.108);
   transition: 0.4s linear;
 }
 .project-card:hover {
@@ -249,4 +267,40 @@ span {
 }
 .icone-resume-castom {
   color: var(--card-background);
+}
+
+.btn-contact {
+  background-color: var(--text-color);
+  color: var(--main-background);
+}
+.btn-contact:hover {
+  background-color: var(--text-color);
+  color: var(--main-background);
+}
+.icon-resume-contact {
+  color: var(--main-background);
+}
+.icon-btn-download {
+  background: transparent;
+  border: 1px solid var(--border-color);
+}
+.icon-btn-download:hover {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  background: linear-gradient(
+    120deg,
+    #0d3b3f 0%,
+    #102f38 40%,
+    #0b202b 75%,
+    #091b25 100%
+  );
+}
+.contact-section {
+  background: linear-gradient(
+    135deg,
+    #0d3b3f 0%,
+    #102f38 40%,
+    #0b202b 75%,
+    #091b25 100%
+  );
 }

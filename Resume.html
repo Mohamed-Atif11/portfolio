@@ -20,7 +20,7 @@
     <!-- strat nav -->
     <nav
       id="nav"
-      class="navbar navbar-expand-lg my-nav border-bottom border-secondary"
+      class="fixed-top myNav navbar navbar-expand-lg"
       data-bs-theme="dark"
     >
       <div class="container-fluid">
@@ -84,7 +84,7 @@
     </div>
     <!-- strat resume -->
     <div class="container">
-      <div class="row justify-content-start mt-5 mb-5">
+      <div class="rounded-5 row justify-content-start mt-5 mb-5">
         <div class="col-12 col-lg-7">
           <h5 class="text-secondary">MY Resume</h5>
         </div>
@@ -427,15 +427,11 @@
               ></a>
             </div>
           </div>
-          <div class="row mt-5 gap-3 justify-content-evenly align-items-center">
+          <div class="row mt-5 g-1 justify-content-evenly align-items-center">
             <!-- card-1 -->
-            <div class="col-7 col-lg-3 project-card p-2 rounded-3">
+            <div class="col-12 col-lg-3 project-card p-2 rounded-3">
               <div class="card card-broject">
-                <img
-                  src="img/resume/swimming.bmp"
-                  class="card-img-top"
-                  alt="..."
-                />
+                <img src="img/resume/swimming.bmp" class="card-img-top" />
                 <div class="card-body">
                   <p class="card-title">swimming-pool</p>
                   <div
@@ -454,13 +450,9 @@
               </div>
             </div>
             <!-- card-2 -->
-            <div class="col-7 col-lg-3 project-card p-2 rounded-3">
+            <div class="col-12 col-lg-3 project-card p-2 rounded-3">
               <div class="card card-broject">
-                <img
-                  src="img/resume/calculator.bmp "
-                  class="card-img-top"
-                  alt="..."
-                />
+                <img src="img/resume/calculator.bmp " class="card-img-top" />
                 <div class="card-body">
                   <p class="card-title">Calculator</p>
                   <div
@@ -479,13 +471,9 @@
               </div>
             </div>
             <!-- card-3 -->
-            <div class="col-7 col-lg-3 project-card p-2 rounded-3">
+            <div class="col-12 col-lg-3 project-card p-2 rounded-3">
               <div class="card card-broject">
-                <img
-                  src="img/resume/golden.bmp"
-                  class="card-img-top"
-                  alt="..."
-                />
+                <img src="img/resume/golden.bmp" class="card-img-top" />
                 <div class="card-body">
                   <p class="card-title">swimming-pool</p>
                   <div
@@ -516,12 +504,13 @@
           <div class="col-12">
             <h4>
               <i class="fa-solid fa-globe me-3 icone-resume"></i>
-              Languages
+              Language
             </h4>
           </div>
+          <!-- html Skills -->
           <div class="row mt-5 mb-3">
-            <div class="d-flex justify-content-center gap-4 align-items-center">
-              <div class="col-1">HTML</div>
+            <div class="d-flex justify-content-evenly align-items-center">
+              <div class="col-1">English</div>
               <div class="col-8">
                 <div
                   class="progress"
@@ -531,9 +520,7 @@
                   aria-valuemin="0"
                   aria-valuemax="100"
                 >
-                  <div class="progress-bar fw-bold" style="width: 60%">
-                    Good
-                  </div>
+                  <div class="progress-bar fw-bold" style="width: 70%">70%</div>
                 </div>
               </div>
             </div>
@@ -541,34 +528,41 @@
         </div>
         <!-- rigth sied -->
         <div
-          class="col-12 col-lg-7 d-flex justify-content-center p-3 section-one-info rounded-4"
+          class="col-12 col-lg-7 p-3 section-one-info contact-section rounded-4"
         >
           <div>
-            <div class="d-flex justify-content-between align-items-center">
-              <h1>Let’s Work <span>Together</span></h1>
-            </div>
-            <div>
+            <div class="">
+              <h2>Let’s Work <span>Together</span></h2>
               <p>
                 Have a Project or an idea? Let’s bulid something great together.
               </p>
             </div>
-            <div class="d-flex flex-wrap gap-3">
-              <button class="btn my-btn-end-section1 fw-bold">
-                <i class="fa-solid fa-envelope icone-resume-castom"></i>
-                Contact Me
-              </button>
-              <p class="text-white fs-4">or</p>
-
+          </div>
+          <div class="row mt-5 justify-content-center align-items-center">
+            <!-- card-1 -->
+            <div class="col-lg-3 p-2">
+              <a href="mailto:mohamedatif.dev@gmail.com">
+                <button class="btn w-100 btn-contact fw-bold rounded-5">
+                  <i class="fa-solid fa-envelope icon-resume-contact me-2"></i>
+                  contact me
+                </button>
+              </a>
+            </div>
+            <!-- card-2 -->
+            <div class="col-lg-1 p-2 text-center">
+              <h5>Or</h5>
+            </div>
+            <!-- card-3 -->
+            <div class="col-lg-3 p-2">
               <a href="file/cv mohamed atif.pdf" download>
-                <button class="btn my-btn-end-section2 fw-bold">
-                  <i class="fa-solid fa-download icone-resume"></i> Downlode Cv
+                <button
+                  class="btn w-100 icon-btn-download text-light rounded-5"
+                >
+                  <i class="fa fa-download icone-resume me-2"></i> Download CV
                 </button>
               </a>
             </div>
           </div>
-          <div
-            class="row mt-5 gap-3 justify-content-evenly align-items-center"
-          ></div>
         </div>
       </div>
     </div>
@@ -578,7 +572,7 @@
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      class="container d-flex flex-column align-items-center"
+      class="container d-flex flex-column align-items-center mt-5"
     >
       <div>
         <p class="text-secondary fs-5">
