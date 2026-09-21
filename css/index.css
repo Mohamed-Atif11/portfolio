@@ -20,37 +20,55 @@ body {
   max-width: 100%;
   overflow-x: clip;
 }
+html {
+  scroll-behavior: smooth;
+}
+#myNav {
+  scroll-margin-top: 0;
+}
 body {
   background: var(--main-background);
   padding-top: 70px;
 }
+
 .myNav {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1000;
 }
 .icon-up {
   position: fixed;
   bottom: 20px;
-  left: 90%;
+  right: 20px;
   z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 30px;
   background-color: var(--text-color);
   color: var(--card-background);
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 1em;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
   border: 1px solid var(--border-color);
 }
 
 .my-title {
   color: var(--text-color);
-  text-shadow: 0 0 20px rgba(135, 25, 52, 0.5);
 }
 .my-title:hover {
   color: var(--text-color);
-  text-shadow: 0 0 30px rgba(25, 135, 84, 0.5);
+  text-shadow: 0 0 10px rgba(25, 135, 84, 0.5);
 }
 /* nav */
 
@@ -122,7 +140,7 @@ span {
 /* about page */
 /* card-info-about */
 .card-info-about {
-  background: #142129;
+  background: var(--card-background);
   transition:
     transform 0.4s ease,
     box-shadow 0.4s ease,
@@ -165,7 +183,7 @@ span {
     to right,
     transparent,
     rgba(255, 255, 255, 0),
-    rgb(253, 253, 253),
+    rgb(5, 228, 176),
     rgba(255, 255, 255, 0),
     transparent
   );
@@ -303,4 +321,42 @@ span {
     #0b202b 75%,
     #091b25 100%
   );
+}
+/* Services page */
+.my-btn-services {
+  background: linear-gradient(
+    135deg,
+    #0d3b3f 0%,
+    #102f38 40%,
+    #0b202b 75%,
+    #091b25 100%
+  );
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.SERVICES {
+  background-color: var(--main-background);
+  color: var(--text-color);
+}
+.card-info-services {
+  background: linear-gradient(
+    -100deg,
+    #0d3b3f 0%,
+    #102f38 40%,
+    #0b202b 75%,
+    #091b25 100%
+  );
+  border: 1px solid var(--border-color);
+  transition: 0.4s all linear;
+  box-shadow: 5px 5px 2px var(--border-color);
+}
+.card-info-services:hover {
+  cursor: pointer;
+  transform: translateX(-5px);
+}
+.services-icon {
+  background: transparent;
+  border: 2px solid rgba(31, 240, 226, 0.106);
+  color: var(--text-color);
 }
